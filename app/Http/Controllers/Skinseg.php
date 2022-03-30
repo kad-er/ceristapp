@@ -24,7 +24,7 @@ class Skinseg extends Controller
         $request->validate([
             'image' => 'required|mimes:gz|max:2048',
         ]);
-        Log::info($request->file('image'));
+        
         //extraction du nom du fichier
         /*$path = $request->file('image')->storeAs(
             '../../skinseg', time() ,'skinsegstorge'
@@ -38,18 +38,30 @@ class Skinseg extends Controller
 
         // stocker le fichier dans le dossier skinsegup
         $request->image->storeAs('', $newimagename, 'skinseg');
-
+        
         //traitement
-       
-        $process = new Process(['ls -l']);
+        $execution_path = base_path()."/skinseg/Script/test.py";
+        Log::info($execution_path);
+        $process = new Process(['python3', $execution_path, $newimagename]);
+
         $process->run();
 
+        $process->run(function ($type, $buffer) {
+            if (Process::ERR === $type) {
+                Log::error($buffer);
+                
+            } else {
+                
+                Log::info($buffer);
+            }
+        });
 
+        echo $process->getOutput();
         //generer le path de sortie
-        $imageName='images/skinsegoutput/'.$image_without_extension.'_output.jpg';
-        $imagenifti='images/skinsegoutput/'.$image_without_extension.'_output.nii.gz';
+        $imageName='SkinSegOutput/JPEG_Outputs/'.$image_without_extension.'_output.jpg';
+        $imagenifti='SkinSegOutput/Nifti_Outputs/'.$image_without_extension.'_output.nii.gz';
         //renvoyer le fichier a la vue
-        return redirect()->to('/index')
+        return redirect()->to('/skin-segmentation')
             ->with('success','You have successfully upload image.')
             ->with('image',$imageName)
             ->with('imagenifti',$imagenifti);

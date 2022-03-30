@@ -88,6 +88,38 @@
         <!-- =========== File upload Form section ======== -->
     <section>
       <div class="container">
+        
+              
+              @if ($message = Session::get('success'))
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                                  <div class="alert alert-success alert-block col-md-12" style="width: 100%">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ $message }}</strong>
+                </div><br>
+              </div>
+              <div class="cold-md-12">
+                <div class="col-md-6" >
+                  <img src="{{ Session::get('image') }}?={{Date('U')}}"/>
+                </div>
+                <div class="col-md-6 mx-auto my-auto" style="float: left;" >
+                  <a href="{{URL::to('/')}}/{{ Session::get('image') }}?={{Date('U')}}" target="_blank">
+                      <button class="btn btn-primary"><i class="fa fa-download"></i> Download File jpg</button>
+                  </a>
+                  <a href="{{URL::to('/')}}/{{ Session::get('imagenifti') }}?={{Date('U')}}" target="_blank">
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> Download File Nifti</button>
+                </a>
+                </div>
+              </div>
+              <br/> <br/>
+            </div>
+          </div>
+              @endif
+
+
+
+              
+            
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">

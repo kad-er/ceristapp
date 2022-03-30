@@ -33,7 +33,7 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/sking-segmentation', function () {
+Route::get('/skin-segmentation', function () {
     return view('skinsegmentation');
 });
 
@@ -45,4 +45,4 @@ Route::get('/face-and-gender-detection', function () {
     return view('faceandgenderdetection');
 });
 
-Route::post('/sking-segmentation', 'App\Http\Controllers\Skinseg@treat')->name('skinseg');
+Route::post('/skin-segmentation', 'App\Http\Controllers\Skinseg@treat')->name('skinseg');

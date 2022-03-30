@@ -56,12 +56,13 @@ def load_data(data_path):
 DATA_PATH ='../Inputs/Nifti_images/'+sys.argv[1]
 filename=sys.argv[1].split(".") #get the name without extension
 IMAGES = load_data(DATA_PATH)
+print(os.path.dirname(os.path.abspath(__file__)))
 print('dimensions: ',IMAGES.shape,' ; ','Type des images: ', type(IMAGES))
 # print('dimensions: ',IMAGES.shape,' ; ','Type des images: ', type(IMAGES),' ; ', 'coder sur: ', IMAGES[1].dtype)
 
 # path to model
 # new_model = tf.keras.models.load_model('/src/Skin_Segmentation/Weights/model_for_medic.h5')
-new_model = tf.keras.models.load_model('../Weights/model_for_medic.h5')
+new_model = tf.keras.models.load_model(os.path.dirname(os.path.abspath(__file__))+'/../Weights/model_for_medic.h5')
 
 # Save Predictions
 def predict_data(data_path):
@@ -81,12 +82,12 @@ def predict_data(data_path):
       a=i
       i = i[:,:] * 51
       nft_img = nib.Nifti1Image(a, image.affine)
-      nib.save(nft_img, os.path.join('../../public/SkinSegOutput/Nifti_Outputs/'+filename[0]+'_output.nii.gz' ))
-      cv2.imwrite('../../public/SkinSegOutput/JPEG_Outputs/'+filename[0]+'_output.jpg', i)
+      nib.save(nft_img, os.path.join(os.path.dirname(os.path.abspath(__file__))+'/../../public/SkinSegOutput/Nifti_Outputs/'+filename[0]+'_output.nii.gz' ))
+      cv2.imwrite(os.path.dirname(os.path.abspath(__file__))+'/../../public/SkinSegOutput/JPEG_Outputs/'+filename[0]+'_output.jpg', i)
       print("{} / {}".format(count,total))
       return np.array(imags)
 
-DATA_PATH ='../Inputs/Nifti_images/'+sys.argv[1]
+DATA_PATH =os.path.dirname(os.path.abspath(__file__))+'/../Inputs/Nifti_images/'+sys.argv[1]
 print('kader')
-predict_data('../Inputs/Nifti_images/'+sys.argv[1])
+predict_data(os.path.dirname(os.path.abspath(__file__))+'/../Inputs/Nifti_images/'+sys.argv[1])
 print('kader2')

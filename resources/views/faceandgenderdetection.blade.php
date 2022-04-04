@@ -54,7 +54,7 @@
           <li><a href="about">A propos</a></li>
           <li class="drop-down active"><a href="services">Services</a>
             <ul>
-              <li ><a href="sking-segmentation">skin segmentation</a></li>
+              <li ><a href="skin-segmentation">skin segmentation</a></li>
               <li><a href="object-detection">object detection</a></li>
               <li class="active"><a href="face-and-gender-detection">Face & Gender detection</a></li>
             </ul>
@@ -85,6 +85,93 @@
     </section>
         <!-- end of our services section -->
 
+        <section class="service">
+          <div class="container">
+
+            @if ($message = Session::get('success'))
+                  <div class="row justify-content-center">
+                      <div class="col-md-12">
+                          <div class="alert alert-success alert-block col-md-12" style="width: 100%">
+                              <button type="button" class="close" data-dismiss="alert">×</button>
+                              <strong>{{ $message }}</strong>
+                          </div><br>
+                      </div>
+                      <div class="cold-md-12">
+                          <div class="col-md-6">
+                              <img src="{{ Session::get('image') }}?={{ Date('U') }}" />
+                          </div>
+                          <div class="col-md-6 offset-3 my-2" style="float: left;">
+                              <a href="{{ URL::to('/') }}/{{ Session::get('image') }}?={{ Date('U') }}"
+                                  target="_blank">
+                                  <button class="btn btn-primary"><i class="fa fa-download"></i> Download File
+                                      jpg</button>
+                                      
+                              </a>
+                          </div>
+                      </div>
+                      <br /> <br />
+                  </div>
+          </div>
+          @endif
+
+              <div class="row justify-content-center">
+                  <div class="col-md-8">
+                      <div class="card">
+                          <div class="card-header">Chargez votre fichier ici</div>
+                          <div class="card-body">
+                              <form method="POST" action="{{ route('face&gender') }}" aria-label="{{ __('Upload') }}"
+                                  enctype="multipart/form-data">
+                                  @csrf
+                                  <div class="form-group row">
+
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" id="image" name="image" required autofocus />
+                                      @if ($errors->has('image'))
+                                              <span class="invalid-feedback" role="alert">
+                                                  <strong>{{ $errors->first('image') }}</strong>
+                                              </span>
+                                          @endif
+                                      <label class="custom-file-label" for="image">{{ __('Fichier') }}</label>
+                                    </div>
+
+
+                                      <!--label for="image"
+                                          class="col-sm-4 col-form-label text-md-right">{{ __('Fichier') }}</label>
+                                      <div class="col-md-6">
+                                          <input id="image" name="image" type="file"
+                                              class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
+                                              required autofocus />
+                                          @if ($errors->has('image'))
+                                              <span class="invalid-feedback" role="alert">
+                                                  <strong>{{ $errors->first('image') }}</strong>
+                                              </span>
+                                          @endif
+                                      </div-->
+                                  </div>
+                                  <div class="row justify-content-center my-2" >
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="facedetection" name="radiobox" class="custom-control-input" checked value="detect_face">
+                                    <label class="custom-control-label" for="facedetection">Face detection</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="genderdetection" name="radiobox" class="custom-control-input" value="detect_gender">
+                                    <label class="custom-control-label" for="genderdetection">Gender detection</label>
+                                  </div>
+                                  </div>
+                                  <div class="form-group row mb-0">
+                                      <div class="mx-auto">
+                                          <button type="submit" class="btn btn-primary">
+                                              {{ __('Chargez !') }}
+                                          </button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
        <!-- ======= Service Details Section ======= -->
        <h4 class="my-3" style="text-align: center">tester les autres services </h4>
@@ -112,7 +199,7 @@
                 <img src="img/service-details-3.jpg" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="face-and-gender-detection">Face and Gender detection</a></h5>
+                <h5 class="card-title"><a href="skin-segmentation">Skin segmentation</a></h5>
                 <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
                 <div class="read-more"><a href="face-and-gender-detection"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
@@ -211,7 +298,7 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-
+  
 </body>
 
 </html>

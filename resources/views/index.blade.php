@@ -52,7 +52,7 @@
           <li><a href="about">A propos</a></li>
           <li class="drop-down"><a href="services">Services</a>
             <ul>
-              <li><a href="sking-segmentation">skin segmentation</a></li>
+              <li><a href="skin-segmentation">skin segmentation</a></li>
               <li><a href="object-detection">object detection</a></li>
               <li><a href="face-and-gender-detection">Face & Gender detection</a></li>
             </ul>

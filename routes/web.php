@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Skinseg;
+use App\Http\Controllers\Cvlib;
+use App\Http\Controllers\Yolo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,3 +48,9 @@ Route::get('/face-and-gender-detection', function () {
 });
 
 Route::post('/skin-segmentation', 'App\Http\Controllers\Skinseg@treat')->name('skinseg');
+
+Route::get('/object-detection', 'App\Http\Controllers\Yolo@index')->name('Objectdetect');
+Route::post('/object-detection', 'App\Http\Controllers\Yolo@create')->name('Objectdetect');
+
+Route::get('/face-and-gender-detection', 'App\Http\Controllers\Cvlib@index')->name('face&gender');
+Route::post('/face-and-gender-detection', 'App\Http\Controllers\Cvlib@create')->name('face&gender');

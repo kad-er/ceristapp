@@ -67,6 +67,11 @@ return [
             'root' => '../skinseg/Inputs/Nifti_images/',
         ],
 
+        'cvlib' => [
+            'driver' => 'local',
+            'root' => '../cvlib/input/',
+        ],
+
 
     ],
 

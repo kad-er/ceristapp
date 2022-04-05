@@ -99,7 +99,13 @@
                         </div>
                         <div class="cold-md-12">
                             <div class="col-md-6">
-                                <img src="{{ Session::get('image') }}?={{ Date('U') }}" />
+                                @if(Session::get('FileType')=='image')
+                                <img src="/{{ Session::get('image') }}?={{Date('U')}}" style="width: 450px">
+                                @else
+                                <video width="450" height="250" controls>
+                                  <source src="/{{ Session::get('image') }}?={{Date('U')}}" type="video/mp4">
+                                </video>
+                                @endif
                             </div>
                             <div class="col-md-12 mx-auto my-2" style="float: left;">
                                 <a href="{{ URL::to('/') }}/{{ Session::get('image') }}?={{ Date('U') }}"
@@ -119,31 +125,43 @@
                         <div class="card">
                             <div class="card-header">Chargez votre fichier ici</div>
                             <div class="card-body">
-                                <form method="POST" action="{{ route('face&gender') }}" aria-label="{{ __('Upload') }}"
-                                    enctype="multipart/form-data">
-                                    @csrf
-                                    <div class="form-group row">
-                                        <label for="image"
-                                            class="col-sm-4 col-form-label text-md-right">{{ __('Fichier') }}</label>
-                                        <div class="col-md-6">
-                                            <input id="image" name="image" type="file"
-                                                class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
-                                                required autofocus />
-                                            @if ($errors->has('image'))
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $errors->first('image') }}</strong>
-                                                </span>
-                                            @endif
-                                        </div>
+                                <form method="POST" action="{{ route('Objectdetect') }}" aria-label="{{ __('Upload') }}"
+                                  enctype="multipart/form-data">
+                                  @csrf
+                                  <div class="form-group row">
+
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" id="image" name="image" required autofocus />
+                                      @if ($errors->has('image'))
+                                              <span class="invalid-feedback" role="alert">
+                                                  <strong>{{ $errors->first('image') }}</strong>
+                                              </span>
+                                          @endif
+                                      <label class="custom-file-label" for="image">{{ __('Fichier') }}</label>
                                     </div>
-                                    <div class="form-group row mb-0">
-                                        <div class="mx-auto">
-                                            <button type="submit" class="btn btn-primary">
-                                                {{ __('Chargez !') }}
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
+
+
+                                      <!--label for="image"
+                                          class="col-sm-4 col-form-label text-md-right">{{ __('Fichier') }}</label>
+                                      <div class="col-md-6">
+                                          <input id="image" name="image" type="file"
+                                              class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
+                                              required autofocus />
+                                          @if ($errors->has('image'))
+                                              <span class="invalid-feedback" role="alert">
+                                                  <strong>{{ $errors->first('image') }}</strong>
+                                              </span>
+                                          @endif
+                                      </div-->
+                                  </div>
+                                  <div class="form-group row mb-0">
+                                      <div class="mx-auto">
+                                          <button type="submit" class="btn btn-primary">
+                                              {{ __('Chargez !') }}
+                                          </button>
+                                      </div>
+                                  </div>
+                              </form>
                             </div>
                         </div>
                     </div>

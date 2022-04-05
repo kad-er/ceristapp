@@ -35,8 +35,7 @@ class Cvlib extends Controller
         
         //changer le nom du fichier par l'heure d'upload
         $newimagename = time().'.'.$request->image->extension();
-        //recuperer le nom du fichier sans les extensions (enlever.nii et .gz)
-        $image_without_extension=pathinfo( $newimagename, PATHINFO_FILENAME);
+       
 
         // stocker le fichier dans le dossier skinsegup
         $request->image->storeAs('', $newimagename, 'cvlib');

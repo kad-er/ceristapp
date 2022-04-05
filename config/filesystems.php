@@ -72,6 +72,11 @@ return [
             'root' => '../cvlib/input/',
         ],
 
+        'objectdetection' => [
+            'driver' => 'local',
+            'root' => '../ObjectDetection/data/images/',
+        ],
+
 
     ],
 

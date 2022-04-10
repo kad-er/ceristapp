@@ -95,9 +95,9 @@
                 <img src="img/service-details-1.jpg" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Mission</a></h5>
+                <h5 class="card-title"><a href="skin-segmentation">Skin segmentation</a></h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <div class="read-more"><a href="skin-segmentation"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
           </div>
@@ -107,9 +107,9 @@
                 <img src="img/service-details-2.jpg" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Plan</a></h5>
+                <h5 class="card-title"><a href="object-detection">Object detection</a></h5>
                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <div class="read-more"><a href="object-detection"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
 
@@ -120,9 +120,9 @@
                 <img src="img/service-details-3.jpg" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Vision</a></h5>
+                <h5 class="card-title"><a href="face-and-gender-detection">Face and gender detection</a></h5>
                 <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <div class="read-more"><a href="face-and-gender-detection"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
           </div>

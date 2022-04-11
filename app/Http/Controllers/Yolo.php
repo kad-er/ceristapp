@@ -51,7 +51,8 @@ class Yolo extends Controller
         
         $source = '--source='.base_path().'/ObjectDetection/data/images/'.$newimagename;
         $process = new Process(['python3', $execution_path, $source]);
-
+        $process->setTimeout(3600);
+        $process->setIdleTimeout(120);
         $process->run();
 
         $process->run(function ($type, $buffer) {

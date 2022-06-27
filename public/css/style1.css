@@ -1,0 +1,888 @@
+/*
+Theme Name: ServHost Hosting- One Page Parallax Html5 Template
+Version: 1.0
+Description: ServHost Hosting- One Page Parallax Html5 Template
+Tags: SEO, one page, minimal, creative, html template, html5 template, site template, business template, parallax template, parallax
+Text Domain: SEO
+*/
+
+/* -------------------------------
+=>  Table of Content  <=
+
+1 - Import Google Fonts
+2 - Start Main Rules
+3 - Start Loading Page
+4 - Start Home Section
+5 - Start Main Banner Section
+6 - Start About Section
+7 - Start Hostings Section
+8 - Start Domain Section
+9 - Start services Section
+10 - sbout us Section
+11 - Start Clients  Section
+12 - Start testimonial Section
+13 - Start contact us Section
+14 - Start Footer Section
+15 - start team section
+----------------------------------*/
+
+/* ---------------------------------------
+    1 - Import Google Fonts
+ ---------------------------------------*/
+/* google font > Work sans */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+/*------------------------------
+    2 - Start Main Rules 
+------------------------------*/
+body {
+    color: #2a2a2a;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px; 
+    font-weight: 400;
+    line-height: 24px;
+}
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    color: #323232;
+    font-family: 'Work Sans', sans-serif;
+}
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+img {
+    height: auto;
+}
+a:hover {
+    color: #02bdd4;
+}
+
+.section-bg-dark {
+  background: #fcfcfc;
+}
+.section-padding {
+    padding: 80px 0px;
+}
+.section-padding-50 {
+    padding: 80px 0 50px 0px;
+}
+.section-title span {
+    color: #777;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+.section-title h4 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.separator {
+    background-color: #ed1c47;
+    height: 1px;
+    margin: 15px auto 0;
+    width: 85px;
+}
+.section-title p {
+    margin-top: 7px;
+}
+
+.overlay {
+    background-color: #bd1717db;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pt-50 {
+  padding-top: 50px;
+} 
+.pt-100 {
+  padding-top: 100px;
+} 
+.pt-75 {
+    padding-top: 75px;
+}
+
+.grid-wrapper {
+  padding-top: 0!important;
+}
+
+.mt-35 {
+  margin-top: 35px!important;
+}
+/* All Transitions */
+.header-text a,
+.services .single-service,
+.portfolio-filter li,
+.price .single-price,
+.price .price-content a,
+.contact .contact-form input[type=submit],
+#footer .social-link a,
+.copyright p a {
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -ms-transition: all .7s;
+    -o-transition: all .7s;
+    transition: all .7s;
+}
+
+/* End of Main Rules */
+
+/* ---------------------------------------
+	3 - Start Loading Page
+----------------------------------------- */
+.preloader {
+	background: #02bdd4b5;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100000;
+}
+.preloader .item-list {
+	height: 33px;
+	left: 0;
+    margin: 0 auto;
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+	width: 33px;
+}
+.preloader .item-list .item {
+	background: #c8c8c8;
+	border-radius: 50%;
+    height: 100%;
+	opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+    animation: bounce 2s infinite ease-in-out;
+}
+.preloader .item-list .item2 {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+}
+
+@-webkit-keyframes bounce {
+	0%, 100% {
+		-webkit-transform: scale(0);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+/* End of Loading Page */
+
+/* ---------------------------------------
+    4 - Start Home Section
+----------------------------------------- */
+
+.main_navbar{
+  
+   left: 0;
+   width: 100%;
+   z-index: 99;
+   top: 0;
+   -webkit-transition: all 400ms linear 0s;
+ -o-transition: all 400ms linear 0s;
+ transition: all 400ms linear 0s;
+}
+
+.navbar-brand img{
+    height: 34px;
+}
+
+.main_navbar.sticky {
+  background: #02d871 !important;
+   box-shadow: 0 -1px 10px rgba(193, 174, 174, 0.1);
+   -webkit-box-shadow: 0 -1px 10px rgba(193, 174, 174, 0.1);
+   min-height: 72px;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   margin-top: 0;
+   z-index: 99;
+   -webkit-transition: all 400ms linear 0s;
+ -o-transition: all 400ms linear 0s;
+ transition: all 400ms linear 0s;
+}
+.navbar-dark .navbar-nav .nav-link {
+   color: #fff;
+   padding: 10px;
+   text-transform: uppercase;
+   font-weight: 600;
+   padding-right: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+   color: rgba(255,255,255,.75);
+   padding: 10px;
+   padding-right: 15px;
+}
+
+.navbar-button a{
+    border-radius: 7px;
+   background-color: transparent;
+   border: 2px solid #fff;
+   font-weight: 600;
+   color: #fff!important;
+   display: inline-block;
+   padding: 8px 40px;
+   margin-left: 10px;
+   -webkit-transition: all 150ms linear 0s;
+   -o-transition: all 150ms linear 0s;
+   transition: all 150ms linear 0s;
+   cursor: pointer;
+}
+
+.navbar-button:hover a {
+   color: #02bdd4 !important;
+   background: #fff;
+
+}
+
+.logo {
+    font-size: 2.7em;
+    font-weight: 900;
+}
+/* stcicky css */
+
+.main-header{
+   background: transparent;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.main-header hr {
+    background: white;
+    opacity: 0.5;
+}
+
+.main-header.sticky {
+    background: #02bdd4b8 !important;
+    box-shadow: 0 4px 20px rgba(193, 174, 174, 0.1);
+    -webkit-box-shadow: 0 4px 20px rgba(193, 174, 174, 0.1);
+    min-height: 72px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 99;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.main-header.sticky hr {
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 991px){
+    .navbar-collapse {
+        padding: 20px;
+        background: rgba(43, 178, 205, 0.92);
+        border-radius: 7px;
+    }
+
+    .main-header.sticky .navbar-collapse{
+        padding: 0;
+        background: none;
+        border-radius: 0;
+    }
+}
+
+
+/* --------------------------
+5 : Main Banner Area CSS
+-------------------------- */
+.main_banner_area{
+    background: #00BCD4;
+    position: relative;
+    z-index: 1;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 190px 0 125px 0;
+    text-align: center;
+}
+.main_banner_area .banner-content h1 {
+    text-align: left;
+    font-size: 4.1em;
+    color: #fff;
+    font-weight: 800;
+    line-height: 35px;
+}
+
+.main_banner_area h1 span {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+/* ---------------------------------------
+    6 - about Section
+----------------------------------------- */
+
+
+.about-headers i {
+    font-size: 8em;
+    /*padding: 0 90px 0 90px;*/
+    color: #02bdd4;
+    margin-top: 3%;
+    transition: all 150ms linear 0s;
+}
+
+.about-headers i:hover {
+    color: #79d156;
+    cursor: pointer;
+}
+
+.nav-p .nav-link.active {
+    color: #79d156!important;
+    background-color: transparent!important;
+}
+
+.pl-36 {
+    padding-left: 10%;
+}
+.about-para-main {
+    border-radius: 7px;
+}
+.about-para {
+    font-size: 1.3em;
+    padding: 20px 40px 40px 40px;
+}
+.about-para h2 {
+    color: white!important;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 73px;
+}
+.bg-green {
+    background: #79d156 !important;
+    color: white !important;
+}
+/* ---------------------------------------
+   7 - Start Hostings Section
+----------------------------------------- */
+
+
+.theme-title h2 {
+    line-height: 55px;
+    position: relative;
+    padding-bottom: 22px;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.theme-title h2:before {
+    content: '';
+    width: 178px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #02bdd4;
+    background: -webkit-gradient(linear,left top, right top,color-stop(81%, #02bdd4), color-stop(81%, #fff), color-stop(89%, #fff), color-stop(89%, #02bdd4), to(#02bdd4));
+    background: linear-gradient(to right,#02bdd4 81%, #fff0 81%, #fff0 89%, #02bdd4 89%, #02bdd4 100%);
+}
+
+body .theme-button {
+    width: 220px;
+    line-height: 48px;
+    border-width: 1px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: #02bdd4;
+    color: #02bdd4;
+    transition: all .3s ease-in-out;
+}
+
+body .theme-button:hover {
+  color: #fff;
+  background: #02bdd4;
+}
+
+.btn-primary {
+    background: #02bdd4!important;
+    border-color: #02bdd4!important;
+}
+.btn-primary:hover {
+    background: #03a9bd!important;
+    border-color: #03a9bd!important;
+}
+
+.card-title {
+    font-size: 2em!important;
+    font-weight: 600!important;
+}
+
+.w-60 {
+    width: 60%!important;
+}
+
+.fs-li {
+    font-size: 1.3em !important;
+    line-height: 35px;
+}
+
+.card {
+    border-radius: 7px !important;
+    border: none!important;
+    box-shadow: 0 5px 30px rgba(156, 185, 226, 0.17);
+}
+
+.card:hover {
+    box-shadow: 0 5px 30px rgba(156, 185, 226, 0.3);
+}
+/* End of hosting Section */
+
+/* ---------------------------------------
+    8 - Domain Section
+----------------------------------------- */
+
+.theme-title-c h2 {
+    line-height: 55px;
+    position: relative;
+    padding-bottom: 22px;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.theme-title-c h2:before {
+    content: '';
+    width: 178px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #02bdd4;
+    background: -webkit-gradient(linear,left top, right top,color-stop(81%, #02bdd4), color-stop(81%, #fff), color-stop(89%, #fff), color-stop(89%, #02bdd4), to(#02bdd4));
+    background: linear-gradient(to right,#02bdd4 81%, #fff0 81%, #fff0 89%, #02bdd4 89%, #02bdd4 100%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.theme-title-c {
+    margin-bottom: 60px;
+}
+
+.btn-primary1 {
+    background: #02bdd4!important;
+    border-color: #02bdd4!important;
+    color: white
+}
+.btn-primary1:hover {
+    background: #03a9bd!important;
+    border-color: #03a9bd!important;
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .btn-primary1 {
+    width: 100% !important;
+    margin-top: 10px;
+  } 
+  .at-m {
+    margin-top: 10px;
+  }
+}
+
+
+/* End of Domain Section */
+
+/* ---------------------------------------
+    9 - services Section
+----------------------------------------- */
+
+p.larger-txt {
+    font-size: 1.3em;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.grid-wrapper {
+    padding-top: 4rem;
+}
+
+.service-block {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.service-block h4 {
+    font-size: 1.8em;
+    color: #323232;
+    font-weight: 700;
+}
+
+.service-block>img {
+    margin: 0rem 0 1.6rem 0;
+}
+
+/* End of services Section */
+
+/* ---------------------------------------
+    10 - sbout us  Section
+----------------------------------------- */
+
+.short-sbout-us p {
+    font-size: 1.3em;
+    line-height: 24px;
+    margin: 30px 0 30px 0;
+}
+/* End of team Section */
+
+/* ---------------------------------------
+    11 - Start Clients Section
+----------------------------------------- */
+
+.owl-carousel {
+    transition: height 1s !important;
+}
+
+/* End of Clients Section */
+
+/* ==========================================================================
+  :: 12. testimonial CSS
+   ========================================================================== */
+
+.testimonial{
+    text-align: center;
+    margin: 85px 20px 20px;
+}
+.testimonial .description{
+    height: 205px;
+    padding: 34px 40px 40px 40px;
+    margin-bottom: 50px;
+    background: #02bdd4;
+    border-top: none;
+    border-radius: 120px;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.testimonial .description.Y , .testimonial .description.Y:before{
+  background: #fabc05;
+}
+
+.testimonial .description.G , .testimonial .description.G:before{
+  background: #79d156;
+}
+
+.testimonial .description:before{
+    content: "\f10d";
+    width: 200px;
+    height: 200px;
+    font-family: FontAwesome;
+    font-weight: 900;
+    line-height: 110px;
+    border-radius: 50%;
+    background: #02bdd4;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.testimonial .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #02bdd4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+    position: relative;
+}
+.testimonial .title:before{
+    content: "";
+    width: 25px;
+    border: 2px dashed #02bdd4;
+    margin: 0 auto;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #323232;
+    text-transform: capitalize;
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0.8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{ background: #02bdd4; }
+@media only screen and (max-width: 1199px){
+    .testimonial .description:before{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 990px){
+    .testimonial .description:before{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 479px){
+    .testimonial .description:before{
+        width: 100px;
+        height: 100px;
+        line-height: 50px;
+        font-size: 26px;
+        top: -40px;
+    }
+}
+
+
+/* ---------------------------------------
+	13 - Start contact  Section
+----------------------------------------- */
+
+.quote-form {
+}
+.quote-form [class*="col-"] {
+    padding: 0 1rem;
+}
+.quote-form [class*="col-"] input,.quote-form [class*="col-"] textarea {
+    margin: 1rem 0;
+}
+input, textarea {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    padding: 0.7rem 2rem;
+    color: #546182;
+    background: #fff;
+    border: 2px solid #546182;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.custom-btn.secondary-btn {
+    background-color: transparent;
+}
+.custom-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #02bdd4;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 1.6rem 3rem 1.5rem;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    border: 2px solid #02bdd4;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    z-index: 1;
+    transition: all .5s;
+}
+.custom-btn:hover {
+  background: #02bdd4;
+  color: #fff;
+}
+.social-icons-wrapper p {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    color: #02bdd4;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem;
+}
+.social-icons {
+    padding-left: 2rem;
+    margin: 1.5rem 0 .8rem;
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fas {
+  color: #02bdd4!important;
+}
+.fas i {
+  font-size: 1rem;
+  padding-top: 15px;
+}
+.contact-info .info {
+    margin-top: 1.5rem;
+}
+.c-h5 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+.contact-info .info p, .contact-info .info a{
+    font-size: 18px;
+    line-height: 35px;
+}
+.ndry {
+  border: 2px solid #02bdd4;
+  background: transparent;
+  color: #02bdd4;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+.ndry:hover {
+  background: #02bdd4;
+  color: #fff
+}
+
+/* End of contact Section */
+
+/* ---------------------------------------
+    14 - Start Footer Section
+----------------------------------------- */
+.footer-padding {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.page-footer .social-icons {
+    padding-left: 0;
+    margin: 0 0 .6rem;
+}
+
+.page-footer .social-icons li a i {
+  font-size: 2em;
+}
+
+.page-footer p {
+  font-size: 1.2em;
+}
+
+.back-to-top {
+    font-weight: 100;
+    border: 2px solid #02bdd4;
+    color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    bottom: 10px;
+    position: fixed;
+    font-size: 21px;
+    background: #02bdd4;
+    right: 10px;
+    display: block !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 7px;
+}
+.back-to-top:hover {
+    background-color: #fff;
+    color: #02bdd4;
+}
+.back-to-top:hover i{
+    color: #02bdd4;
+}
+
+
+/* ---------------------------------------
+    15 - Start team Section
+----------------------------------------- */
+
+
+
+
+.img-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 15px auto;
+    max-width: 40rem;
+    background-color: #fff;
+}
+
+.img-card h4 {
+    font-size: 1rem;
+    line-height: 2.6rem;
+    color: #323232;
+    font-weight: 300;
+    padding: 2.2rem 15px 2.1rem;
+    margin-bottom: 0;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.img-card:hover {
+    text-decoration: none;
+    box-shadow: 0 5px 30px rgba(156, 185, 226, 0.3);
+}
+
+.img-card:hover h4 span {
+    color: #0a8aff;
+}
+
+.img-card h4 span {
+    display: block;
+    font-size: 30px;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #323232;
+    margin-bottom: .3rem;
+    transition: all .3s;
+}

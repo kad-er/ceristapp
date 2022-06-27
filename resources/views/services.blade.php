@@ -95,7 +95,7 @@
                 <img src="img/service-details-1.jpg" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="skin-segmentation">Skin segmentation</a></h5>
+                <h5 class="card-title"><a href="skin-segmentation">Medical & Pharma</a></h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 <div class="read-more"><a href="skin-segmentation"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>

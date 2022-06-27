@@ -7,7 +7,9 @@ RUN pip3 install tensorflow numpy nibabel scipy glob2 opencv-python pandas 'torc
 RUN apt-get install software-properties-common -y
 WORKDIR /app
 COPY . /app
+RUN composer install --prefer-dist --no-dev --optimize-autoloader --no-interaction
 RUN composer install
 RUN composer dump-autoload
-CMD php artisan serve --host=0.0.0.0 --port=8181
+RUN chmod +x artisan
+CMD php artisan serve --host=127.0.0.1 --port=8181
 EXPOSE 8181

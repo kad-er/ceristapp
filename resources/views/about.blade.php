@@ -92,20 +92,15 @@
             <img src="img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
+            <h3>Our Research Unit</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            The Research Unit in Data Science and Applications, affiliated to the Research Center for Scientific and Technical Information (CERIST), has for objectives to lead research works and studies in data science, to contribute at first to the acquisition of new scientific and technological knowledge and skills, and subsequently, to develop products and services by ensuring their valorization, diffusion and functional implementation. Among other things, to contribute to training by and for research.
+
+The unit is committed to developing and deploying effective theory based on realistic practice, and some of the objectives and structures have been developed through consultation and collaboration with industry.
+            </p>
+           
+            <p>
+            The unit believes that only through the interaction of theory and practice allows for appropriate training in such a rapidly evolving area. Practice makes us aware of real contemporary problems – theory is a shield against professional obsolescence.
             </p>
           </div>
         </div>

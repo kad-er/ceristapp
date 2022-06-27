@@ -39,6 +39,18 @@ Route::get('/skin-segmentation', function () {
     return view('skinsegmentation');
 });
 
+Route::get('/Industry', function () {
+    return view('Industry');
+});
+
+Route::get('/Medical', function () {
+    return view('Medical');
+});
+
+Route::get('/Retail', function () {
+    return view('Retail');
+});
+
 Route::get('/object-detection', function () {
     return view('objectdetection');
 });

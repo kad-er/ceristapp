@@ -11,6 +11,7 @@
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "laravelcollective/html": "^6.3",
+        "pusher/pusher-php-server": "^7.0",
         "symfony/process": "^6.0"
     },
     "require-dev": {

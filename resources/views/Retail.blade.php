@@ -174,6 +174,7 @@ background learning nor on a ground plane assumption.</p>
 colorbar that defines the color mapping to the fractional human count. For this example the true
 human count equals 303, while the given density predicts 294.</p>
                 <img src="img/density.png" alt="" class="img-fluid" style="width: 600px;height: 338px;">
+
                
               </div>
               <div class="tab-pane tb" id="tab-4">
@@ -186,23 +187,24 @@ human count equals 303, while the given density predicts 294.</p>
                 
               </div>
               <div class="tab-pane tb" id="tab-5">
-                <h3>Face recognition</h3>
+                <h3> <a href="face-and-gender-detection" class="btn-get-started animate__animated animate__fadeInUp">Face recognition</a> </h3>
                 <p class="fst-italic">Face recognition is always an interesting area and one of the challenging tasks in computer vision and image 
                                         retrieval. It is applicable in variety of domain such as in ATM,</p>
+                                       
                 <img src="img/facedetected.png" alt="" class="img-fluid">
-               
+                
               </div>
-              <div class="tab-pane" id="tab-6">
+              <div class="tab-pane tb" id="tab-6">
                 <h3>Intrusion Detection</h3>
-                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p class="fst-italic">Intrusion detection systems have been highly researched upon but the most changes occur in the data set collected which contains many samples of intrusion techniques such as brute force, denial of service or even an infiltration from within a network.</p>
+                <img src="img/intrusion.png" alt="" class="img-fluid">
+                
               </div>
-              <div class="tab-pane" id="tab-7">
+              <div class="tab-pane tb" id="tab-7">
                 <h3>Facial Emotion Analysis</h3>
-                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p class="fst-italic">Emotion Detection Using Convolutional</p>
+                <img src="img/emotion-recog.png" alt="" class="img-fluid">
+               
               </div>
               
               

@@ -138,15 +138,15 @@
               </div>
               <div class="tab-pane tb" id="tab-2">
                 <h3>Defect detection</h3>
-                <p class="fst-italic">Lily leads Elixir UK and oversees the company’s Customer Operations teams supporting millions.</p>
-                <img src="img/customer.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">DEEP LEARNING DEFECT DETECTION.</p>
+                <img src="img/defect.jpeg" alt="" class="img-fluid">
                
               </div>
-              <div class="tab-pane" id="tab-3">
+              <div class="tab-pane tb" id="tab-3">
                 <h3>Object Counting</h3>
-                <p class="fst-italic">As the VP of People, Thomas’s focus lies in the development and optimization of talent retention.</p>
-                <img src="img/machine.jpg" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p class="fst-italic">Detection based object counting </p>
+                <img src="img/object counting.jpg" alt="" class="img-fluid" style="width: 600px;height: 300px;" >
+                
               </div>
            
               
@@ -184,47 +184,44 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services">Services</a></li>
+                           
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Medical">Medical & Pharma</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Industry">Industry</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Retail">Retail & Crowd analysis</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                        <p style="color: white;">
+                            univérsite de bejaia <br>
+                            targa ouzemour<br>
+                             <br><br>
+                            <strong>Phone:</strong> +213 000 000<br>
+                            <strong>Email:</strong> cerist_Bejaia@cerist.dz<br>
                         </p>
 
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>About Moderna</h3>
+                        <h3>About </h3>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
                             valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                        <div class="social-links mt-3">
+                        <!--div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                             <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </div>
+                        </div-->
                     </div>
 
                 </div>
@@ -233,14 +230,14 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Cerist Bejaia</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+               
             </div>
         </div>
     </footer><!-- End Footer -->

@@ -3900,3 +3900,132 @@ section {
 
 
 
+.section-padding-50 {
+  padding: 80px 0 50px 0px;
+}
+
+
+
+/* ---------------------------------------
+    8 - Case Study Section
+----------------------------------------- */
+
+.theme-title-c h2 {
+  line-height: 55px;
+  position: relative;
+  padding-bottom: 22px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.theme-title-c h2:before {
+  content: '';
+  width: 178px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: #6384ff;
+  background: -webkit-gradient(linear,left top, right top,color-stop(81%, #6384ff), color-stop(81%, #fff), color-stop(89%, #fff), color-stop(89%, #6384ff), to(#6384ff));
+  background: linear-gradient(to right,#6384ff 81%, #fff 81%, #fff 89%, #6384ff 89%, #6384ff 100%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.theme-title-c {
+  margin-bottom: 60px;
+}
+
+.case-study .single-case-study {
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.case-study .single-case-study img {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.case-study .single-case-study .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  background: rgba(0,0,0,0.8);
+}
+
+.case-study .single-case-study:hover .overlay {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.case-study .single-case-study .overlay div {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  padding: 27px 0 25px 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.case-study .single-case-study .overlay div:before, .case-study .single-case-study .overlay div:after {
+  content: '';
+  width: 102px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.case-study .single-case-study:hover .overlay div:before {
+  top: -0;
+  opacity: 1;
+}
+
+.case-study .single-case-study .overlay div:before {
+  top: -20px;
+}
+
+.case-study .single-case-study:hover .overlay div:after {
+  bottom: 0;
+  opacity: 1;
+}
+
+h5 {
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.case-study .single-case-study .overlay div h5 a {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.case-study .single-case-study .overlay div:after {
+  bottom: -20px;
+}
+
+.case-study .single-case-study .overlay div p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #6384ff;
+}
+/* End of services Section */
+
+
+

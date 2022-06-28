@@ -52,9 +52,9 @@
           <li><a href="about">A propos</a></li>
           <li class="drop-down"><a href="services">Services</a>
             <ul>
-              <li><a href="skin-segmentation">skin segmentation</a></li>
-              <li><a href="object-detection">object detection</a></li>
-              <li><a href="face-and-gender-detection">Face & Gender detection</a></li>
+              <li><a href="Medical">Medical & Pharma</a></li>
+              <li><a href="Industry">Industry</a></li>
+              <li><a href="Retail">Retail & Crowd analysis</a></li>
             </ul>
           </li>
           <li><a href="contact">Contact Us</a></li>
@@ -147,7 +147,7 @@
   <main id="main">
 
       <!-- ======= Service Details Section ======= -->
-      <section class="service-details">
+    <section class="service-details">
       <div class="container">
 
         <div class="row">
@@ -194,7 +194,7 @@
     </section><!-- End Service Details Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <!--section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
         <div class="row">
@@ -221,90 +221,93 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
-
+    </section--><!-- End Why Us Section -->
+  
     
     
 
-    <!-- ======= Features Section ======= -->
-    <section class="features">
-      <div class="container">
+    <!-- Case Study Section Start -->
+    <section id="case" class="section-padding-50">
+            
+            <div class="case-study">
+                <div class="container">
+                    <div class="theme-title-c text-center">
+                        <h2 >SEO Case Studies</h2>
+                    </div> <!-- /.theme-title -->
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/detected.webp" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html"></a></h5>
+                                        <p></p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/emotion-analysis-computer-vision.webp" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html">Facial Emotion Analysis</a></h5>
+                                        <p>Perform facial analysis to detect attributes such as gender, <br>
+                                         age, emotion and more.</p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/objectCount.jpg" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html">Object counting</a></h5>
+                                        <p>Use cameras for automated object counting <br> with deep learning models.</p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/inspection.jpg" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html">Search Engine Optimize</a></h5>
+                                        <p>SEO, SMM</p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/inspection.jpg" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html">Search Engine Optimize</a></h5>
+                                        <p>SEO, SMM</p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="single-case-study">
+                                <img src="img/inspection.jpg" alt="">
+                                <div class="overlay">
+                                    <div>
+                                        <h5><a href="case-study-details-v1.html">Search Engine Optimize</a></h5>
+                                        <p>SEO, SMM</p>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                            </div> <!-- /single-case-study -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.case-study -->
 
-        <div class="section-title">
-          <h2>Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="img/features-3.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="img/features-4.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
+        </section>
+        <!-- End of Case Study Section -->
 
   </main><!-- End #main -->
 
@@ -328,70 +331,68 @@
     </div>
 
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+            <div class="container">
+                <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services">Services</a></li>
+                           
+                        </ul>
+                    </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Medical">Medical & Pharma</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Industry">Industry</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Retail">Retail & Crowd analysis</a></li>
+                        </ul>
+                    </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p style="color: white;">
+                            univérsite de bejaia <br>
+                            targa ouzemour<br>
+                             <br><br>
+                            <strong>Phone:</strong> +213 000 000<br>
+                            <strong>Email:</strong> cerist_Bejaia@cerist.dz<br>
+                        </p>
 
-          </div>
+                    </div>
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Moderna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>About </h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <!--div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div-->
+                    </div>
+
+                </div>
             </div>
-          </div>
-
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Cerist Bejaia</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+               
+            </div>
+        </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

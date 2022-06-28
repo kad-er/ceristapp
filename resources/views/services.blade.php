@@ -54,9 +54,9 @@
           <li><a href="about">A propos</a></li>
           <li class="drop-down"><a href="services">Services</a>
             <ul>
-              <li><a href="skin-segmentation">skin segmentation</a></li>
-              <li><a href="object-detection">object detection</a></li>
-              <li><a href="face-and-gender-detection">Face & Gender detection</a></li>
+              <li><a href="Medical">Medical & Pharma</a></li>
+              <li><a href="Industry">Industry</a></li>
+              <li><a href="Retail">Retail & Crowd analysis</a></li>
             </ul>
           </li>
           <li><a href="contact">Contact Us</a></li>

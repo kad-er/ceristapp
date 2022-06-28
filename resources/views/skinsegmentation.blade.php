@@ -51,19 +51,19 @@
             </div>
 
             <nav class="nav-menu float-right d-none d-lg-block">
-                <ul>
-                    <li><a href="index">Accueil</a></li>
-                    <li><a href="about">A propos</a></li>
-                    <li class="drop-down active"><a href="services">Services</a>
-                        <ul>
-                            <li class="active"><a href="skin-segmentation">skin segmentation</a></li>
-                            <li><a href="object-detection">object detection</a></li>
-                            <li><a href="face-and-gender-detection">Face & Gender detection</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact">Contact Us</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
+        <ul>
+          <li class="active"><a href="index">Accueil</a></li>
+          <li><a href="about">A propos</a></li>
+          <li class="drop-down"><a href="services">Services</a>
+            <ul>
+              <li><a href="Medical">Medical & Pharma</a></li>
+              <li><a href="Industry">Industry</a></li>
+              <li><a href="Retail">Retail & Crowd analysis</a></li>
+            </ul>
+          </li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
 
         </div>
     </header><!-- End Header -->
